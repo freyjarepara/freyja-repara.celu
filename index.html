@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREYJA | Reparación de Celulares y Accesorios</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes Google Fonts (Orbitron, Poppins y Caveat para la frase) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Orbitron:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="androides.png" alt="Logo FREYJA" class="logo-img" onerror="this.onerror=null; this.src='https://i.ibb.co/L5m95rM/androide-vikingo.jpg';">
+            <span>FREYJA</span>
+        </div>
+        
+        <!-- Menú Hamburguesa sin JavaScript (CSS Pure) -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars icon-open"></i>
+            <i class="fa-solid fa-xmark icon-close"></i>
+        </label>
+
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#accesorios">Accesorios</a>
+            <a href="#contacto" class="btn-nav">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero (Principal) -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge"><i class="fa-solid fa-shield-halved"></i> Servicio Técnico Especializado</span>
+            <h1>Tu celular como nuevo, <br><span class="gradient-text">en tiempo récord.</span></h1>
+            <p>Soluciones efectivas en reparación multimarca, cambio de módulos, baterías y los mejores accesorios para proteger y potenciar tu dispositivo.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5492255623660?text=Hola!%20Quiero%20consultar%20por%20una%20reparación" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i> Reparar mi celular
+                </a>
+                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios con Tarjetas Giratorias 3D -->
+    <section id="servicios" class="services">
+        <h2 class="section-title">Nuestros <span class="gradient-text">Servicios</span></h2>
+        <p class="section-subtitle">Pasa el cursor sobre cada tarjeta para ver la imagen explicativa.</p>
+
+        <div class="cards-grid">
+            <!-- Tarjeta 1: Pantalla -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front card">
+                        <div class="card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h3>Cambio de Módulo y Pantalla</h3>
+                        <p>Recupera la nitidez y la respuesta táctil de tu pantalla con repuestos de alta calidad y garantía asegurada.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="modulos (2).png" alt="Reparación de pantalla">
+                        <div class="flip-overlay">
+                            <h4>Cambio de Módulo</h4>
+                            <p>Repuestos 100% garantizados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Batería -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front card">
+                        <div class="card-icon"><i class="fa-solid fa-battery-full"></i></div>
+                        <h3>Cambio de Batería</h3>
+                        <p>Devuélvele la autonomía a tu dispositivo con baterías homologadas y optimizadas para todas las marcas.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="/antes (2).png" alt="Cambio de batería">
+                        <div class="flip-overlay">
+                            <h4>Baterías Nuevas</h4>
+                            <p>Autonomía y salud celular.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Puerto de Carga -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front card">
+                        <div class="card-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+                        <h3>Puerto de Carga</h3>
+                        <p>Solución rápida a fallas de carga, pines dañados o falsos contactos en tu conector USB-C / Lightning.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="puerto (2).png" alt="Puerto de carga">
+                        <div class="flip-overlay">
+                            <h4>Puertos Pin de Carga</h4>
+                            <p>Carga rápida asegurada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: Microsoldadura -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front card">
+                        <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Microsoldadura y Placa</h3>
+                        <p>Reparaciones avanzadas a nivel componente en placas base mojadas, cortocircuitos o equipos apagados.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="placas (2).png" alt="Microsoldadura en placa">
+                        <div class="flip-overlay">
+                            <h4>Reparación de Placas</h4>
+                            <p>Laboratorio especializado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Accesorios con Tarjetas Giratorias 3D -->
+    <section id="accesorios" class="accessories">
+        <h2 class="section-title">Accesorios <span class="gradient-text">Premium</span></h2>
+        <p class="section-subtitle">Protección, carga rápida y estilo para tu smartphone.</p>
+
+        <div class="cards-grid">
+            <!-- Tarjeta Accesorio 1: Fundas y Vidrios -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front card-accessory">
+                        <div class="acc-icon"><i class="fa-solid fa-shield-cat"></i></div>
+                        <h3>Fundas y Vidrios Templados</h3>
+                        <p>Máxima protección contra caídas e impactos con la mejor variedad de estilos.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=600&q=80" alt="Fundas y vidrios templados">
+                        <div class="flip-overlay">
+                            <h4>Fundas & Vidrios 9D</h4>
+                            <p>Protección anticaídas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta Accesorio 2: Cargadores -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front card-accessory">
+                        <div class="acc-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h3>Cargadores y Cables</h3>
+                        <p>Sistemas de carga rápida y segura para cuidar la salud de tu batería.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="cargador (2).png" alt="Cargadores y cables de carga rápida">
+                        <div class="flip-overlay">
+                            <h4>Cargadores Rápidos</h4>
+                            <p>Cables reforzados USB-C y Lightning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta Accesorio 3: Audio y Auriculares -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front card-accessory">
+                        <div class="acc-icon"><i class="fa-solid fa-headphones"></i></div>
+                        <h3>Audio y Auriculares</h3>
+                        <p>Sonido envolvente, opciones inalámbricas Bluetooth y conectividad de alta fidelidad.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="parauri.png" alt="Auriculares Bluetooth y accesorios de audio">
+                        <div class="flip-overlay">
+                            <h4>Auriculares TWS</h4>
+                            <p>Bluetooth & Alta Fidelidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página / Footer -->
+    <footer id="contacto">
+        <div class="footer-container">
+            <div class="quote-box">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="quote-text">
+                    "Nada supera la satisfacción de devolverle la vida a un celular: no solo arreglamos un dispositivo, conectamos nuevamente a una persona con su mundo."
+                </p>
+            </div>
+
+            <div class="contact-cta">
+                <h3>¿Necesitas un presupuesto sin cargo?</h3>
+                <p>Escríbenos directamente a nuestro WhatsApp y te responderemos al instante.</p>
+                <a href="https://wa.me/5492255623660?text=Hola!%20Necesito%20un%20presupuesto" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i> Chatear por WhatsApp
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 FREYJA - Reparación de Celulares & Accesorios. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5492255623660?text=Hola!%20Tengo%20una%20consulta" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contacto por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
